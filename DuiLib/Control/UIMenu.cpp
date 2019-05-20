@@ -270,7 +270,7 @@ namespace DuiLib {
 	{
 		if( CMenuWnd::GetGlobalContextMenuObserver().GetManager() != NULL) 
 		{
-			if( msg.sType == _T("click") || msg.sType == _T("valuechanged") ) 
+			if( msg.sType == _T("click") || msg.sType == _T("valuechanged") || msg.sType == _T("itemclick"))
 			{
 				CMenuWnd::GetGlobalContextMenuObserver().GetManager()->SendNotify(msg, false);
 			}

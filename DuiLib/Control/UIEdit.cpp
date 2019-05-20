@@ -312,7 +312,11 @@ namespace DuiLib
 		}
 		if( event.Type == UIEVENT_SCROLLWHEEL )
 		{
-			if( m_pWindow != NULL ) return;
+			if (m_pWindow != NULL)
+			{
+				m_pManager->SendNotify(this, DUI_MSGTYPE_SCROLLWHEEL, event.wParam, event.lParam);
+				return;
+			}
 		}
 		if( event.Type == UIEVENT_SETFOCUS && IsEnabled() ) 
 		{
