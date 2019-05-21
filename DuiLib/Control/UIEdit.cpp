@@ -314,7 +314,7 @@ namespace DuiLib
 		{
 			if (m_pWindow != NULL)
 			{
-				m_pManager->SendNotify(this, DUI_MSGTYPE_SCROLLWHEEL, event.wParam, event.lParam);
+				m_pManager->SendNotify(this, DUI_MSGTYPE_SCROLL, event.wParam, event.lParam);
 				return;
 			}
 		}

@@ -118,8 +118,6 @@ namespace DuiLib
 #define DUI_MSGTYPE_LISTHEADITEMCHECKED		(_T("listheaditemchecked"))
 #define DUI_MSGTYPE_LISTPAGECHANGED			(_T("listpagechanged"))
 
-#define DUI_MSGTYPE_SCROLLWHEEL				(_T("scrollwheel"))
-
 	//////////////////////////////////////////////////////////////////////////
 
 	struct DUI_MSGMAP_ENTRY;
